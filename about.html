@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Về Chúng Tôi - GreenFood</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-top">
+            <div class="logo">
+                <a href="index.html">Green<span>Food</span></a>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Tìm kiếm món ăn, nước uống...">
+                <button type="button">Tìm kiếm</button>
+            </div>
+            <div class="header-user-actions">
+                <a href="register.html" class="action-item">👤 Đăng nhập / Đăng ký</a>
+                <a href="cart.html" class="action-item cart-btn">🛒 Giỏ hàng <span class="cart-count">0</span></a>
+            </div>
+        </div>
+
+        <div class="navigation-bar">
+            <div class="container nav-container">
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">TRANG CHỦ</a></li>
+                        <li><a href="order.html">ORDER</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><li><a href="about.html" class="active">VỀ CHÚNG TÔI</a></li></li>
+                        <li><a href="labs.html">LAB THỰC HÀNH</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container" style="padding: 50px 0;">
+        <h2 style="text-align: center; margin-bottom: 30px;">Về GreenFood</h2>
+        
+        <div class="about-content" style="line-height: 1.8; color: #333; max-width: 900px; margin: 0 auto;">
+            <p><strong>GreenFood</strong> ra đời với sứ mệnh mang đến những bữa ăn sạch, dinh dưỡng và tiện lợi cho cộng đồng, đặc biệt là các bạn sinh viên và nhân viên văn phòng bận rộn.</p>
+            <br>
+            
+            <h3>Tầm nhìn của chúng tôi</h3>
+            <p>Chúng tôi hướng đến trở thành thương hiệu đồ ăn "Eat Clean" hàng đầu tại khu vực Quận 8, nơi khách hàng có thể hoàn toàn yên tâm về chất lượng thực phẩm, nguồn gốc xuất xứ và quy trình chế biến đảm bảo an toàn vệ sinh thực phẩm.</p>
+            <br>
+            
+            <h3>Giá trị cốt lõi</h3>
+            <ul>
+                <li><strong>Sạch:</strong> Nguyên liệu tươi ngon, được tuyển chọn kỹ lưỡng mỗi ngày.</li>
+                <li><strong>Dinh dưỡng:</strong> Thực đơn được thiết kế bởi các chuyên gia để cân bằng calo.</li>
+                <li><strong>Tận tâm:</strong> Luôn lắng nghe và cải thiện dịch vụ để mang lại sự hài lòng cao nhất.</li>
+            </ul>
+            <br>
+            <hr style="border: 0; border-top: 1px dashed #ccc; margin: 30px 0;">
+
+            <h3 style="color: #2e7d32; text-align: center; margin-bottom: 25px; font-size: 24px;">Hệ Thống Chức Năng Website GreenFood</h3>
+            
+            <table style="width: 100%; border-collapse: collapse; margin-top: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                <thead>
+                    <tr style="background-color: #2e7d32; color: white; text-align: left;">
+                        <th style="padding: 12px; border: 1px solid #ddd; width: 25%;">Trang / Thành phần</th>
+                        <th style="padding: 12px; border: 1px solid #ddd;">Các chức năng cốt lõi đã hiện thực</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 12px; border: 1px solid #ddd; font-weight: bold; background: #fafafa;">🏠 Trang chủ (index)</td>
+                        <td style="padding: 12px; border: 1px solid #ddd;">
+                            • Giới thiệu tổng quan thương hiệu và định hướng sản phẩm.<br>
+                            • Thanh điều hướng toàn cục kết nối đồng bộ hệ thống.<br>
+                            • Nhúng bản đồ vị trí cơ sở bằng Iframe trực quan tại Footer.
+                        </td>
+                    </tr>
+                    <tr style="background-color: #fcfcfc;">
+                        <td style="padding: 12px; border: 1px solid #ddd; font-weight: bold; background: #fafafa;">🍲 Đặt món (order)</td>
+                        <td style="padding: 12px; border: 1px solid #ddd;">
+                            • Phân loại thực đơn động theo tab danh mục (Món chính, Salad, Tráng miệng, Thức uống).<br>
+                            • Nút thêm nhanh sản phẩm thông qua tương tác sự kiện click.<br>
+                            • Tích hợp cơ chế truyền tham số dữ liệu động (`name`, `price`) trực tiếp vào bộ xử lý.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 12px; border: 1px solid #ddd; font-weight: bold; background: #fafafa;">🛒 Giỏ hàng (cart)</td>
+                        <td style="padding: 12px; border: 1px solid #ddd;">
+                            • Tự động trích xuất và hiển thị danh sách món đã chọn dưới dạng bảng biểu.<br>
+                            • Tính toán tự động tổng tiền theo thời gian thực dựa trên số lượng.<br>
+                            • Chức năng loại bỏ sản phẩm ra khỏi giỏ hàng nhanh chóng.<br>
+                            • Nút kích hoạt lệnh <strong>Thanh toán ngay</strong> kèm cảnh báo tương tác cho người dùng.
+                        </td>
+                    </tr>
+                    <tr style="background-color: #fcfcfc;">
+                        <td style="padding: 12px; border: 1px solid #ddd; font-weight: bold; background: #fafafa;">⚙️ Logic xử lý (main.js)</td>
+                        <td style="padding: 12px; border: 1px solid #ddd;">
+                            • Lưu trữ dữ liệu trạng thái giỏ hàng bền vững thông qua <strong>LocalStorage</strong>.<br>
+                            • Đồng bộ con số hiển thị giỏ hàng trên Header tại mọi trang nhờ hàm `updateCartCount`.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 12px; border: 1px solid #ddd; font-weight: bold; background: #fafafa;">👤 Thành viên (register/login)</td>
+                        <td style="padding: 12px; border: 1px solid #ddd;">
+                            • Form biểu mẫu thu thập thông tin đăng nhập/đăng ký chuẩn hóa.<br>
+                            • Ràng buộc dữ liệu biểu mẫu cơ bản thông qua thuộc tính HTML5 (`required`, `type="email"`).<br>
+                            • Điều hướng liên kết đảo chiều linh hoạt giữa hai trạng thái tài khoản.
+                        </td>
+                    </tr>
+                    <tr style="background-color: #fcfcfc;">
+                        <td style="padding: 12px; border: 1px solid #ddd; font-weight: bold; background: #fafafa;">📰 Tin tức & Khác (blog/labs)</td>
+                        <td style="padding: 12px; border: 1px solid #ddd;">
+                            • Không gian cập nhật các bài viết chia sẻ kiến thức sống sạch (Eat Clean).<br>
+                            • Phục vụ phân phối các nội dung báo cáo thực hành bộ môn theo tiến độ học tập.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <h3 class="footer-logo">Green<span>Food</span></h3>
+                <p>GreenFood đồ án website bán thức ăn phục vụ môn học thực hành nhập môn web tại STU.</p>
+                <p><strong>Địa chỉ:</strong> 180 Cao Lỗ, Phường 4, Quận 8, TP. Hồ Chí Minh</p>
+                <p><strong>Email:</strong> DH52300516@student.stu.edu.vn</p>
+            </div>
+            <div class="footer-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.954410387766!2d106.67525717573531!3d10.738002459897455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f62a90e3dbd%3A0xedc4565bc930dd92!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgU8OgaSBHw7Ju!5e0!3m2!1svi!2s!4v1716100000000!5m2!1svi!2s" width="100%" height="180" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

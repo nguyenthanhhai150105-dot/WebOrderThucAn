@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt Món Trực Tuyến - GreenFood</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+</a>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-top">
+            <div class="logo">
+                <a href="index.html">Green<span>Food</span></a>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Tìm kiếm món ăn, nước uống...">
+                <button type="button">Tìm kiếm</button>
+            </div>
+            <div class="header-user-actions">
+                <a href="register.html" class="action-item">👤 Đăng nhập / Đăng ký</a>
+                <a href="cart.html" class="action-item cart-btn">🛒 Giỏ hàng <span class="cart-count">0</span></a>
+            </div>
+        </div>
+
+        <div class="navigation-bar">
+            <div class="container nav-container">
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">TRANG CHỦ</a></li>
+                        <li><a href="order.html" class="active">ORDER</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="about.html">VỀ CHÚNG TÔI</a></li>
+                        <li><a href="labs.html">LAB THỰC HÀNH</a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container order-container">
+        
+        <aside class="order-sidebar">
+            <h3 class="sidebar-title">Danh Mục</h3>
+            <ul class="filter-menu">
+                <li class="filter-item active" data-target="mon-chinh">🍲 Món chính</li>
+                <li class="filter-item" data-target="mon-salad">🥗 Món Salad</li>
+                <li class="filter-item" data-target="trang-mieng">🍰 Tráng miệng</li>
+                <li class="filter-item" data-target="thuc-uong">🍹 Thức uống</li>
+            </ul>
+        </aside>
+
+        <section class="order-content">
+            <h2 class="category-heading" id="category-title">Món chính</h2>
+            
+            <div class="product-grid-3" id="order-product-list">
+                
+                <div class="product-card food-item mon-chinh">
+                    <div class="product-img-wrapper"><img src="images/order_monchinh1.jpg" alt="Món chính 1" class="product-img"></div>
+                    <div class="product-info">
+                        <span class="brand-tag">MÓN CHÍNH</span>
+                        <h3 class="product-name">Cơm Gạo Lứt Ức Gà Áp Chảo</h3>
+                        <div class="product-price"><span class="price-current">65.000 đ</span><button class="btn-add-cart" onclick="addToCart('Cơm Gạo Lứt Ức Gà Áp Chảo', 65000)">+</button></div>
+                    </div>
+                </div>
+                <div class="product-card food-item mon-chinh">
+                    <div class="product-img-wrapper"><img src="images/order_monchinh2.jpg" alt="Món chính 2" class="product-img"></div>
+                    <div class="product-info"> <span class="brand-tag">MÓN CHÍNH</span> <h3 class="product-name">Bún Lứt Trộn Thịt Bò Áp Chảo</h3> <div class="product-price"><span class="price-current">70.000 đ</span><button class="btn-add-cart" onclick="addToCart('Bún Lứt Trộn Thịt Bò Áp Chảo', 70000)">+</button></div> </div>
+                </div>
+                <div class="product-card food-item mon-chinh">
+                    <div class="product-img-wrapper"><img src="images/order_monchinh3.jpg" alt="Món chính 3" class="product-img"></div>
+                    <div class="product-info"> <span class="brand-tag">MÓN CHÍNH</span> <h3 class="product-name">Cá Hồi Nướng Sốt Teriyaki</h3> <div class="product-price"><span class="price-current">125.000 đ</span><button class="btn-add-cart" onclick="addToCart('Cá Hồi Nướng Sốt Teriyaki', 125000)">+</button></div> </div>
+                </div>
+                <div class="product-card food-item mon-chinh">
+                    <div class="product-img-wrapper"><img src="images/order_monchinh4.jpg" alt="Món chính 4" class="product-img"></div>
+                    <div class="product-info"> <span class="brand-tag">MÓN CHÍNH</span> <h3 class="product-name">Miến Trộn Ức Gà Sốt Mè Rang</h3> <div class="product-price"><span class="price-current">60.000 đ</span><button class="btn-add-cart" onclick="addToCart('Miến Trộn Ức Gà Sốt Mè Rang', 60000)">+</button></div> </div>
+                </div>
+                <div class="product-card food-item mon-chinh">
+                    <div class="product-img-wrapper"><img src="images/order_monchinh5.jpg" alt="Món chính 5" class="product-img"></div>
+                    <div class="product-info"> <span class="brand-tag">MÓN CHÍNH</span> <h3 class="product-name">Cơm Tấm Gạo Lứt Sườn Sốt Táo</h3> <div class="product-price"><span class="price-current">65.000 đ</span><button class="btn-add-cart" onclick="addToCart('Cơm Tấm Gạo Lứt Sườn Sốt Táo', 65000)">+</button></div> </div>
+                </div>
+                <div class="product-card food-item mon-chinh">
+                    <div class="product-img-wrapper"><img src="images/order_monchinh6.jpg" alt="Món chính 6" class="product-img"></div>
+                    <div class="product-info"> <span class="brand-tag">MÓN CHÍNH</span> <h3 class="product-name">Cháo Yến Mạch Thịt Bằm </h3> <div class="product-price"><span class="price-current">55.000 đ</span><button class="btn-add-cart" onclick="addToCart('Cháo Yến Mạch Thịt Bằm', 55000)">+</button></div> </div>
+                </div>
+
+                <div class="product-card food-item mon-salad">
+                    <div class="product-img-wrapper"><img src="images/oder_salad1.jpg" alt="Salad 1" class="product-img"></div>
+                    <div class="product-info">
+                        <span class="brand-tag">SALAD</span>
+                        <h3 class="product-name">Salad Ức Gà Sốt Sữa Chua Địa Trung Hải</h3>
+                        <div class="product-price"><span class="price-current">50.000 đ</span><button class="btn-add-cart" onclick="addToCart('Salad Ức Gà Sốt Sữa Chua Địa Trung Hải', 50000)">+</button></div>
+                    </div>
+                </div>
+                <div class="product-card food-item mon-salad">
+                    <div class="product-img-wrapper"><img src="images/order_salad2.jpg" alt="Salad 2" class="product-img"></div>
+                    <div class="product-info"> <span class="brand-tag">SALAD</span> <h3 class="product-name">Salad Cá Ngừ Đại Dương Quả Bơ</h3> <div class="product-price"><span class="price-current">60.000 đ</span><button class="btn-add-cart" onclick="addToCart('Salad Cá Ngừ Đại Dương Quả Bơ', 60000)">+</button></div> </div>
+                </div>
+                <div class="product-card food-item mon-salad">
+                    <div class="product-img-wrapper"><img src="images/order_salad3.jpg" alt="Salad 3" class="product-img"></div>
+                    <div class="product-info"> <span class="brand-tag">SALAD</span> <h3 class="product-name">Salad Cầu Vồng Sốt Chanh Dây</h3> <div class="product-price"><span class="price-current">45.000 đ</span><button class="btn-add-cart" onclick="addToCart('Salad Cầu Vồng Sốt Chanh Dây', 45000)">+</button></div> </div>
+                </div>
+                <div class="product-card food-item mon-salad">
+                    <div class="product-img-wrapper"><img src="images/order_salad4.jpg" alt="Salad 4" class="product-img"></div>
+                    <div class="product-info"> <span class="brand-tag">SALAD</span> <h3 class="product-name">Salad Trứng Luộc Bơ Sáp Dầu Giấm</h3> <div class="product-price"><span class="price-current">45.000 đ</span><button class="btn-add-cart" onclick="addToCart('Salad Trứng Luộc Bơ Sáp Dầu Giấm', 45000)">+</button></div> </div>
+                </div>
+                <div class="product-card food-item mon-salad">
+                    <div class="product-img-wrapper"><img src="images/order_salad5.jpg" alt="Salad 5" class="product-img"></div>
+                    <div class="product-info"> <span class="brand-tag">SALAD</span> <h3 class="product-name">Salad Tôm Nướng Rau Mầm Thủy Canh</h3> <div class="product-price"><span class="price-current">65.000 đ</span><button class="btn-add-cart" onclick="addToCart('Salad Tôm Nướng Rau Mầm Thủy Canh', 65000)">+</button></div> </div>
+                </div>
+                <div class="product-card food-item mon-salad">
+                    <div class="product-img-wrapper"><img src="images/order_salad6.jpg" alt="Salad 6" class="product-img"></div>
+                    <div class="product-info"> <span class="brand-tag">SALAD</span> <h3 class="product-name">Salad Bò Áp Chảo Sốt Tiêu Đen</h3> <div class="product-price"><span class="price-current">70.000 đ</span><button class="btn-add-cart" onclick="addToCart('Salad Bò Áp Chảo Sốt Tiêu Đen', 70000)">+</button></div> </div>
+                </div>
+
+                <div class="product-card food-item trang-mieng">
+                    <div class="product-img-wrapper"><img src="images/order_trangmieng1.jpg" alt="Tráng miệng 1" class="product-img"></div>
+                    <div class="product-info">
+                        <span class="brand-tag">TRÁNG MIỆNG</span>
+                        <h3 class="product-name">Sữa Chua Hy Lạp Hạt Chia Hoa Quả</h3>
+                        <div class="product-price"><span class="price-current">35.000 đ</span><button class="btn-add-cart" onclick="addToCart('Sữa Chua Hy Lạp Hạt Chia Hoa Quả', 35000)">+</button></div>
+                    </div>
+                </div>
+                <div class="product-card food-item trang-mieng">
+                    <div class="product-img-wrapper"><img src="images/order_trangmieng2.jpg" alt="Tráng miệng 2" class="product-img"></div>
+                    <div class="product-info"> <span class="brand-tag">TRÁNG MIỆNG</span> <h3 class="product-name">Pudding Xoài Cát Nguyên Chất Ít Đường</h3> <div class="product-price"><span class="price-current">30.000 đ</span><button class="btn-add-cart" onclick="addToCart('Pudding Xoài Cát Nguyên Chất Ít Đường', 30000)">+</button></div> </div>
+                </div>
+                <div class="product-card food-item trang-mieng">
+                    <div class="product-img-wrapper"><img src="images/order_trangmieng3.jpg" alt="Tráng miệng 3" class="product-img"></div>
+                    <div class="product-info"> <span class="brand-tag">TRÁNG MIỆNG</span> <h3 class="product-name">Bánh Mouse Bơ Sáp Ăn Kiêng</h3> <div class="product-price"><span class="price-current">45.000 đ</span><button class="btn-add-cart" onclick="addToCart('Bánh Mouse Bơ Sáp Ăn Kiêng', 45000)">+</button></div> </div>
+                </div>
+                <div class="product-card food-item trang-mieng">
+                    <div class="product-img-wrapper"><img src="images/order_trangmieng4.jpg" alt="Tráng miệng 4" class="product-img"></div>
+                    <div class="product-info"> <span class="brand-tag">TRÁNG MIỆNG</span> <h3 class="product-name">Thạch Rau Câu Dừa Xiêm Nguyên Trái</h3> <div class="product-price"><span class="price-current">28.000 đ</span><button class="btn-add-cart" onclick="addToCart('Thạch Rau Câu Dừa Xiêm Nguyên Trái', 28000)">+</button></div> </div>
+                </div>
+                <div class="product-card food-item trang-mieng">
+                    <div class="product-img-wrapper"><img src="images/order_trangmieng5.jpg" alt="Tráng miệng 5" class="product-img"></div>
+                    <div class="product-info"> <span class="brand-tag">TRÁNG MIỆNG</span> <h3 class="product-name">Bánh Chuối Yến Mạch Nướng Mật Ong</h3> <div class="product-price"><span class="price-current">35.000 đ</span><button class="btn-add-cart" onclick="addToCart('Bánh Chuối Yến Mạch Nướng Mật Ong', 35000)">+</button></div> </div>
+                </div>
+                <div class="product-card food-item trang-mieng">
+                    <div class="product-img-wrapper"><img src="images/order_trangmieng6.jpg" alt="Tráng miệng 6" class="product-img"></div>
+                    <div class="product-info"> <span class="brand-tag">TRÁNG MIỆNG</span> <h3 class="product-name">Trái Cây Tươi Thập Cẩm Theo Mùa</h3> <div class="product-price"><span class="price-current">40.000 đ</span><button class="btn-add-cart" onclick="addToCart('Trái Cây Tươi Thập Cẩm Theo Mùa', 40000)">+</button></div> </div>
+                </div>
+
+                <div class="product-card food-item thuc-uong">
+                    <div class="product-img-wrapper"><img src="images/order_thucuong1.jpg" alt="Thức uống 1" class="product-img"></div>
+                    <div class="product-info">
+                        <span class="brand-tag">THỨC UỐNG</span>
+                        <h3 class="product-name">Nước Ép Cần Tây Táo Xanh Nguyên Chất</h3>
+                        <div class="product-price"><span class="price-current">39.000 đ</span><button class="btn-add-cart" onclick="addToCart('Nước Ép Cần Tây Táo Xanh Nguyên Chất', 39000)">+</button></div>
+                    </div>
+                </div>
+                <div class="product-card food-item thuc-uong">
+                    <div class="product-img-wrapper"><img src="images/order_thucuong2.jpg" alt="Thức uống 2" class="product-img"></div>
+                    <div class="product-info"> <span class="brand-tag">THỨC UỐNG</span> <h3 class="product-name">Nước Ép Cam Cà Rốt Sáng Da</h3> <div class="product-price"><span class="price-current">35.000 đ</span><button class="btn-add-cart" onclick="addToCart('Nước Ép Cam Cà Rốt Sáng Da', 35000)">+</button></div> </div>
+                </div>
+                <div class="product-card food-item thuc-uong">
+                    <div class="product-img-wrapper"><img src="images/order_thucuong3.jpg" alt="Thức uống 3" class="product-img"></div>
+                    <div class="product-info"> <span class="brand-tag">THỨC UỐNG</span> <h3 class="product-name">Trà Gừng Mật Ong Hạt Chia Ấm Bụng</h3> <div class="product-price"><span class="price-current">30.000 đ</span><button class="btn-add-cart" onclick="addToCart('Trà Gừng Mật Ong Hạt Chia Ấm Bụng', 30000)">+</button></div> </div>
+                </div>
+                <div class="product-card food-item thuc-uong">
+                    <div class="product-img-wrapper"><img src="images/order_thucuong4.jpg" alt="Thức uống 4" class="product-img"></div>
+                    <div class="product-info"> <span class="brand-tag">THỨC UỐNG</span> <h3 class="product-name">Sữa Hạt Hạnh Nhân Óc Chó Tự Nấu</h3> <div class="product-price"><span class="price-current">45.000 đ</span><button class="btn-add-cart" onclick="addToCart('Sữa Hạt Hạnh Nhân Óc Chó Tự Nấu', 45000)">+</button></div> </div>
+                </div>
+                <div class="product-card food-item thuc-uong">
+                    <div class="product-img-wrapper"><img src="images/order_thucuong5.jpg" alt="Thức uống 5" class="product-img"></div>
+                    <div class="product-info"> <span class="brand-tag">THỨC UỐNG</span> <h3 class="product-name">Trà Dưỡng Nhan Tuyết Yến Hạt Sen</h3> <div class="product-price"><span class="price-current">40.000 đ</span><button class="btn-add-cart" onclick="addToCart('Trà Dưỡng Nhan Tuyết Yến Hạt Sen', 40000)">+</button></div> </div>
+                </div>
+                <div class="product-card food-item thuc-uong">
+                    <div class="product-img-wrapper"><img src="images/order_thucuong6.jpg" alt="Thức uống 6" class="product-img"></div>
+                    <div class="product-info"> <span class="brand-tag">THỨC UỐNG</span> <h3 class="product-name">Sinh Tố Bơ Chuối Kết Hợp Sữa Dừa</h3> <div class="product-price"><span class="price-current">49.000 đ</span><button class="btn-add-cart" onclick="addToCart('Sinh Tố Bơ Chuối Kết Hợp Sữa Dừa', 49000)">+</button></div> </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+        
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <h3 class="footer-logo">Green<span>Food</span></h3>
+                <p>GreenFood đồ án website bán thức ăn phục vụ môn học thực hành nhập môn web tại STU.</p>
+                <p><strong>Địa chỉ:</strong> 180 Cao Lỗ, Phường 4, Quận 8, TP. Hồ Chí Minh</p>
+                <p><strong>Email:</strong> DH52300516@student.stu.edu.vn</p>
+            </div>
+            <div class="footer-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.954410387766!2d106.67525717573531!3d10.738002459897455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f62a90e3dbd%3A0xedc4565bc930dd92!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgU8OgaSBHw7Ju!5e0!3m2!1svi!2s!4v1716100000000!5m2!1svi!2s" width="100%" height="180" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bố Cục BookStore - CSS Cơ Bản</title>
+    <style>
+ 
+        * {
+            box-sizing: border-box; 
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            padding: 20px;
+        }
+
+
+        .container {
+            width: 100%;
+            max-width: 1140px;
+            margin: 0 auto;
+            background-color: #ffffff;
+        }
+
+ 
+        .row {
+            width: 100%;
+        }
+        .row::after {
+            content: "";
+            display: table;
+            clear: both; 
+        }
+
+        .col-25 { width: 25%; float: left; padding: 10px; }
+        .col-33 { width: 33.333%; float: left; padding: 10px; }
+        .col-50 { width: 50%; float: left; padding: 10px; }
+        .col-75 { width: 75%; float: left; padding: 10px; }
+        .col-100 { width: 100%; float: left; padding: 10px; }
+
+        .box {
+            background-color: #eceff1;
+            border: 2px solid #b0bec5;
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+            color: #455a64;
+        }
+
+        .box-tall { height: 300px; }
+        .box-medium { height: 200px; }
+        .box-footer { height: 150px; background-color: #cfd8dc; }
+        h2 { text-align: center; padding: 20px 0 10px 0; }
+    </style>
+
+<style>
+.student-footer {
+  background: #fff;
+  border-top: 1.5px solid #e0e0e0;
+  padding: 14px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+  letter-spacing: 0.2px;
+}
+.student-footer strong { color: #111; font-weight: 600; }
+</style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-50">
+                <div class="box">Email: hello@bookstore.com</div>
+            </div>
+            <div class="col-50">
+                <div class="box">Ngôn ngữ | Đăng nhập</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+                <div class="box">Logo BookStore</div>
+            </div>
+            <div class="col-50">
+                <div class="box">Menu </div>
+            </div>
+            <div class="col-25">
+                <div class="box">Giỏ hàng</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+                <div class="box box-tall">Danh mục sản phẩm</div>
+            </div>
+            <div class="col-75">
+                <div class="row">
+                    <div class="col-100">
+                        <div class="box">Thanh tìm kiếm & Số điện thoại hỗ trợ</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-100">
+                        <div class="box box-medium">Ảnh Banner Chính</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-100">
+                <h2>SẢN PHẨM NỔI BẬT</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25"><div class="box box-medium">Sản phẩm 1</div></div>
+            <div class="col-25"><div class="box box-medium">Sản phẩm 2</div></div>
+            <div class="col-25"><div class="box box-medium">Sản phẩm 3</div></div>
+            <div class="col-25"><div class="box box-medium">Sản phẩm 4</div></div>
+        </div>
+        <div class="row">
+            <div class="col-25"><div class="box box-medium">Sản phẩm 5</div></div>
+            <div class="col-25"><div class="box box-medium">Sản phẩm 6</div></div>
+            <div class="col-25"><div class="box box-medium">Sản phẩm 7</div></div>
+            <div class="col-25"><div class="box box-medium">Sản phẩm 8</div></div>
+        </div>
+
+        <div class="row">
+            <div class="col-50"><div class="box box-medium">Banner Phụ 1</div></div>
+            <div class="col-50"><div class="box box-medium">Banner Phụ 2</div></div>
+        </div>
+
+        <div class="row">
+            <div class="col-100">
+                <h2>BÀI VIẾT </h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-33"><div class="box box-tall">Bài viết 1</div></div>
+            <div class="col-33"><div class="box box-tall">Bài viết 2</div></div>
+            <div class="col-33"><div class="box box-tall">Bài viết 3</div></div>
+        </div>
+
+        <div class="row">
+            <div class="col-25"><div class="box box-footer">Thông tin liên hệ & Logo</div></div>
+            <div class="col-33"><div class="box box-footer">Link Hỗ trợ / Dịch vụ</div></div>
+            <div class="col-75" style="width: 41.666%;"> <div class="box box-footer">Đăng ký nhận tin & Mạng xã hội</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-100">
+                <div class="box" style="background-color: #b0bec5; border: none;">
+                    footer
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+</body>
+</html>
